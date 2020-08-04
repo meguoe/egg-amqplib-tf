@@ -1,0 +1,61 @@
+{
+  "name": "egg-amqplib-tf",
+  "version": "1.1.0",
+  "description": "Amqp plugin for egg with amqplib, Use connection manager to maintain MQ connection and support automatic reconnection！",
+  "eggPlugin": {
+    "name": "amqplib"
+  },
+  "keywords": [
+    "egg",
+    "eggPlugin",
+    "egg-plugin",
+    "amqp",
+    "amqplib",
+    "amqp-connection-manager"
+  ],
+  "dependencies": {
+    "@types/amqplib": "^0.5.13",
+    "amqplib": "^0.6.0",
+    "bluebird": "^3.7.2",
+    "amqp-connection-manager": "^3.2.0"
+  },
+  "devDependencies": {
+    "autod": "^3.1.0",
+    "autod-egg": "^1.1.0",
+    "egg": "^2.27.0",
+    "egg-bin": "^4.15.0",
+    "egg-ci": "^1.15.0",
+    "egg-mock": "^4.0.0",
+    "eslint": "^7.4.0",
+    "eslint-config-egg": "^8.0.1",
+    "webstorm-disable-index": "^1.2.0"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "scripts": {
+    "test": "npm run lint -- --fix && egg-bin pkgfiles && npm run test-local",
+    "test-local": "egg-bin test",
+    "cov": "egg-bin cov",
+    "lint": "eslint .",
+    "ci": "egg-bin pkgfiles --check && npm run lint && npm run cov",
+    "pkgfiles": "egg-bin pkgfiles",
+    "autod": "autod"
+  },
+  "files": [
+    "config",
+    "app.js",
+    "lib",
+    "index.d.ts"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meguoe/egg-amqplib-tf"
+  },
+  "bugs": {
+    "url": "https://github.com/meguoe/egg-amqplib-tf/issues"
+  },
+  "homepage": "https://github.com/meguoe/egg-amqplib-tf#readme",
+  "author": "meguoe",
+  "license": "MIT"
+}
