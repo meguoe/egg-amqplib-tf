@@ -3,6 +3,9 @@
 This module adds AMQP connection manager on the basis of egg-amqplib
 Amqp plugin for egg with amqplib, Use connection manager to maintain MQ connection and support automatic reconnection！
 
+## Chinese
+[中文说明](README.zh_CN.md)
+
 ## Install
 ```
 $ npm i egg-amqplib-tf --save

@@ -1,6 +1,6 @@
 {
   "name": "egg-amqplib-tf",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Amqp plugin for egg with amqplib, Use connection manager to maintain MQ connection and support automatic reconnection！",
   "eggPlugin": {
     "name": "amqplib"
